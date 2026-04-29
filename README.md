@@ -1,5 +1,7 @@
 # YBLB Desktop
 
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 一步两步社区桌面版，使用 Tauri + React + TypeScript 构建。
 
 ## 已实现功能
