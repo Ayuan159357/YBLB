@@ -1,12 +1,8 @@
 export type NavKey =
-  | "overview"
+  | "console"
   | "checkin"
   | "calendar"
-  | "roles"
-  | "community"
-  | "tasks"
-  | "messages"
-  | "settings";
+  | "account";
 
 export type EventCategory = "赛事" | "福利" | "社区" | "更新";
 export type PostTag = "攻略" | "讨论" | "招募" | "同人" | "公告";
