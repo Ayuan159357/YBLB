@@ -2,66 +2,53 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-一步两步社区桌面版，使用 Tauri + React + TypeScript 构建。
+一步两步的桌面版，Tauri + React 写的。
 
-## 已实现功能
+## 能干啥
 
-- 蓝白现代化桌面 UI（响应式布局，支持窄屏）
-- 控制台（签到状态 + 近期活动一览）
-- 每日签到（连续签到、月度签到分布、里程碑）
-- 活动日历（按类型筛选、月视图、当日活动详情）
-- 账号绑定（微信 OAuth 绑定 UI 骨架）
+- **控制台** — 签到状态、近期活动，打开就能看到
+- **每日签到** — 连续签到、月度分布、里程碑奖励
+- **活动日历** — 月视图、按类型筛选、每日活动详情
+- **账号绑定** — 微信 OAuth 绑定（UI 做好了，接口待接）
 
-## 技术栈
+## 用到的
 
 - Tauri 2
 - React 19
 - TypeScript
 - Vite
 
-## 项目启动
-
-1. 安装 Node.js 20+
-2. 安装 Rust 工具链（用于 Tauri 桌面端）
-3. 安装依赖：
+## 跑起来
 
 ```bash
+# 装依赖
 npm install
-```
 
-4. 前端开发预览：
-
-```bash
+# 前端预览
 npm run dev
-```
 
-5. 桌面端联调：
-
-```bash
+# 桌面端联调
 npm run tauri dev
-```
 
-6. 构建前端产物：
-
-```bash
+# 构建
 npm run build
 ```
 
-## 目录结构
+## 项目结构
 
-```text
+```
 src/
-  App.tsx                # 主界面与模块路由
-  App.css                # 蓝白视觉主题与响应式样式
-  mockData.ts            # 初始数据与日期工具
-  types.ts               # 业务类型定义
-  hooks/useAppStore.ts   # 本地状态管理与交互动作
-  components/            # 面板组件
-    ConsolePanel.tsx     # 控制台
-    CheckInPanel.tsx     # 每日签到
-    CalendarPanel.tsx    # 活动日历
-    AccountBindingPanel.tsx # 账号绑定
+  App.tsx                       主界面
+  App.css                       样式
+  mockData.ts                   模拟数据
+  types.ts                      类型定义
+  hooks/useAppStore.ts          状态管理
+  components/
+    ConsolePanel.tsx            控制台
+    CheckInPanel.tsx            签到
+    CalendarPanel.tsx           日历
+    AccountBindingPanel.tsx     账号绑定
 src-tauri/
-  tauri.conf.json        # 桌面窗口与应用配置
-  src/lib.rs             # Tauri 入口
+  tauri.conf.json               窗口配置
+  src/lib.rs                    Tauri 入口
 ```
