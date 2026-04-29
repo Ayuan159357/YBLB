@@ -71,13 +71,14 @@ export default function AccountBindingPanel() {
         <p className="muted" style={{ marginTop: 4 }}>
           本项目已开源 —
           <a
-            href="https://github.com/Ayuan-code/YBLB_desktop"
+            href="https://github.com/Ayuan159357/YBLB"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "var(--brand-main)", marginLeft: 4 }}
+            style={{ color: "var(--brand-main)" }}
           >
             GitHub 仓库
           </a>
+          <span> · MIT License</span>
         </p>
       </article>
 
